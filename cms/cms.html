@@ -1,0 +1,217 @@
+<!Doctype html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+            <link rel="stylesheet" href="cms.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">    
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>    
+                    </button>
+                    <a href="#" class="navbar-brand">AdminStrap</a>
+                </div>
+                <div class="navbar-collapse collapse" id="top">                 
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="cms.html">Dashboard</a></li>
+                    <li><a href="pages.html">Pages</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="users.html">Users</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">    
+                        <li><a href="#">Welcome! mayank</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1><span class="glyphicon glyphicon-cog"></span> Dashboard <small>Manage your site</small></h1>
+                </div>
+                <div class="col-md-2">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Create <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a type="button" style="cursor:pointer" data-toggle="modal" data-target="#myModal">Pages</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Posts</a></li>
+                            <li><a href="#">Users</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <section id="#breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li>Dashboard</li>
+                </ol>
+            </div>
+        </section>
+        
+        
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="list-group">
+                            <a href="cms.html" class="list-group-item main-color-bg"><span class="glyphicon glyphicon-cog"></span> Dashboard </a>
+                            <a class="list-group-item" href="pages.html"><span class="glyphicon glyphicon-list-alt"></span> Pages <span class="badge">105</span></a>
+                            <a class="list-group-item" href="posts.html"><span class="glyphicon glyphicon-pencil"></span> Posts <span class="badge">83</span></a>
+                            <a class="list-group-item" href="users.html"><span class="glyphicon glyphicon-user"></span> Users <span class="badge">323</span></a>
+                        </div>
+                        <div class="well">
+                            <div class="container-fluid">
+                                <h3>Disk Storage Used</h3>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                    <span>60%</span>  
+                                </div>
+                            </div>
+                            </div>
+                            <div class="container-fluid">
+                                <h3>Bandwidth Used</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                    <span>40%</span>  
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading main-color-bg">Website Overview</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="jumbotron">
+                                            <h3><span class="glyphicon glyphicon-user"></span> 323</h3>
+                                            <p>Users</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                            <div class="jumbotron">
+                                                <h3><span class="glyphicon glyphicon-list-alt"></span> 105</h3>
+                                                <p>Pages</p>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                            <div class="jumbotron">
+                                                <h3><span class="glyphicon glyphicon-pencil"></span> 83</h3>
+                                                <p>Posts</p>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                            <div class="jumbotron">
+                                                <h3><span class="glyphicon glyphicon-stats"></span> 1,233</h3>
+                                                <p>Visits</p>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading main-color-bg">
+                               Latest Users
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Joined</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Raju Sagwaliya</td>
+                                        <td>sr432@gmail.com</td>
+                                        <td>Jul,12 2018</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Monu Thakur</td>
+                                            <td>mt432@gmail.com</td>
+                                            <td>Jul,18 2018</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Ankit Sagwaliya</td>
+                                            <td>as432@gmail.com</td>
+                                            <td>Jul,1 2017</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Kaju Sagwaliya</td>
+                                                <td>Ks432@gmail.com</td>
+                                                <td>Jun,12 2018</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Sachin Sharma</td>
+                                                <td>ss432@gmail.com</td>
+                                                <td>Mar,21 2018</td>
+                                            </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>copyright &copy;2018,Adminstrap</p>
+        </footer>
+
+        <!--          modal        -->
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Add Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label>Page Title</label>
+                                <input tpe="text" placeholder="page title" name="page title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Page Body</label>
+                                <textarea type="text" placeholder="page body" name="editor1" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox"> Publish
+                            </div>
+                            <div class="form-group">
+                                <label>Meta Tags</label>
+                                <input type="text" name="meta tags" placeholder="meta tags.." class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Meta Description</label>
+                                <input type="text" name="meta description" placeholder="meta description.." class="form-control">   
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                    CKEDITOR.replace( 'editor1' );
+                </script>
+    </body>
+</html>
